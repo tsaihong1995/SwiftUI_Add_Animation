@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		2B5B2F77259A51E600A6FA1C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5B2F76259A51E600A6FA1C /* ContentView.swift */; };
 		2B5B2F79259A51E600A6FA1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B5B2F78259A51E600A6FA1C /* Assets.xcassets */; };
 		2B5B2F7C259A51E600A6FA1C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B5B2F7B259A51E600A6FA1C /* Preview Assets.xcassets */; };
+		2B5B2F86259A540F00A6FA1C /* PureSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2B5B2F85259A540F00A6FA1C /* PureSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B5B2F86259A540F00A6FA1C /* PureSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = SwiftUI_Add_Animation;
+			packageProductDependencies = (
+				2B5B2F85259A540F00A6FA1C /* PureSwiftUI */,
+			);
 			productName = SwiftUI_Add_Animation;
 			productReference = 2B5B2F71259A51E500A6FA1C /* SwiftUI_Add_Animation.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +117,9 @@
 				Base,
 			);
 			mainGroup = 2B5B2F68259A51E500A6FA1C;
+			packageReferences = (
+				2B5B2F84259A540F00A6FA1C /* XCRemoteSwiftPackageReference "pure-swift-ui" */,
+			);
 			productRefGroup = 2B5B2F72259A51E500A6FA1C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -328,6 +336,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2B5B2F84259A540F00A6FA1C /* XCRemoteSwiftPackageReference "pure-swift-ui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CodeSlicing/pure-swift-ui";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2B5B2F85259A540F00A6FA1C /* PureSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2B5B2F84259A540F00A6FA1C /* XCRemoteSwiftPackageReference "pure-swift-ui" */;
+			productName = PureSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2B5B2F69259A51E500A6FA1C /* Project object */;
 }
